@@ -1,0 +1,18 @@
+<html>
+  <body>
+    <h1>Your Information:</h1>
+    <p id="placeholder"></p>
+    
+    <script>
+      var myramenshop = {};
+      
+      var theName = localStorage.getItem("name");
+      var thePrice = localStorage.getItem("price");
+      
+      myramenshop["name"] = theName;
+      myramenshop["price"] = thePrice;
+      
+      document.getElementById("placeholder").innerHTML = "Name: " + myramenshop.name + " Price: " + myramenshop.price;
+    </script>
+  </body>
+</html>

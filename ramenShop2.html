@@ -1,0 +1,15 @@
+<html>
+  <body>
+    <h1>Enter Price:</h1>
+    <input type="number" id="userInput">
+    <button onclick="ramen()">Add</button>
+    
+    <script>
+      function ramen() {
+        var input = document.getElementById('userInput').value;
+        localStorage.setItem("price",input);
+        location.href="ramenShop3.html";
+      }
+    </script>
+  </body>
+</html>
